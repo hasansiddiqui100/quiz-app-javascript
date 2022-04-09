@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>quiz app</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+  </head>
+  <body>
+    <div class="container">
+      <img class="left_arrow"src="chevron-left.svg" alt="" onclick="previous()">
+      <div class="card" id="card">
+        <div class="numberCircle" id="numberCircle">30</div>
+        <div class="card_header" id="question">
+          Voting for the Second phase of local body election in KP’s slated to
+          take place in 18 districts on ____________?
+        </div>
+        <div class="card_body" >
+          <input type="radio" id="a"  class="options" name="options"/>
+          <label for="A" id="a_text">March 27, 2022</label ><br />
+          <input type="radio" id="b" class="options" name="options"/>
+          <label for="B" id="b_text">March 27, 2022</label ><br />
+          <input type="radio" id="c" class="options" name="options"/>
+          <label for="C" id="c_text">March 27, 2022</label ><br />
+          <input type="radio" id="d" class="options" name="options"/>
+          <label for="D" id="d_text">March 27, 2022</label >
+        </div>
+        <!-- <div class="subButton"><button  onclick="submitButton()">submit1</button></div> -->
+      </div>
+      <img class="right_arrow"src="chevron-right.svg" alt="" onclick="next()">
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
